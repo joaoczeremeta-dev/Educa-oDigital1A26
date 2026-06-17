@@ -1,11 +1,13 @@
 header {
-background-color: #07376b;
+.artigo-autor {
+font-weight: bold;
+}
+ background-color: #07376b;
 color: #FFFFFF;
 text-align: center;
 max-width: 800px;
 margin: 0 auto;
 padding: 16px;
-}
 main {
 background-color: #FFFFFF;
 color: #000000;
@@ -15,5 +17,6 @@ height: 80px;
 }
 main {
 display: flex;
+}
 }
 }
