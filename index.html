@@ -14,38 +14,69 @@
     </header>
 
     <main>
-   <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
 
-<h2>Meu primeiro post</h2>
+        <article>
+            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
 
-<p class="artigo-autor">
-    Por: João Miguel Czeremeta
-</p>
+            <div>
+                <h2>Meu primeiro post</h2>
 
-<p>
-    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
-    programação e curiosidades da área de tecnologia.
-</p>
+                <p class="artigo-autor">
+                    Por: João Miguel Czeremeta
+                </p>
 
-<button>🫡 <span>0</span></button>
-<button>👍 <span>0</span></button>
-<button>🚀 <span>0</span></button>
-<button>🗿 <span>0</span></button>
-</main>
+                <p>
+                    Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
+                    programação e curiosidades da área de tecnologia.
+                </p>
+
+                <button>🗿 <span>0</span></button>
+                <button>🫡 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="Gemini_Generated_Image_.png" alt="Imagem criada pelo Gemini">
+
+            <div>
+                <h2>Meu segundo post</h2>
+
+                <p class="artigo-autor">
+                    Por: João Miguel Czeremeta
+                </p>
+
+                <p>
+                    Neste post vou compartilhar mais conteúdos sobre HTML, CSS
+                    e JavaScript para quem está começando na programação.
+                </p>
+
+                <button>🗿 <span>0</span></button>
+                <button>🫡 <span>0</span></button>
+            </div>
+        </article>
+
+    </main>
 
     <script>
-const botoes = document.querySelectorAll("button");
+        const botoes = document.querySelectorAll("button");
 
-botoes.forEach(function(botao) {
+        botoes.forEach(function (botao) {
+            let curtiu = false;
 
-    botao.addEventListener("click", botaoClicado);
+            botao.addEventListener("click", botaoClicado);
 
-    function botaoClicado() {
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
+            function botaoClicado() {
+                let texto = botao.querySelector("span");
 
-});
-</script>
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
