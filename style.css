@@ -1,14 +1,14 @@
-header {
-    body {
+body {
     max-width: 100vw;
-    }
+}
+
+header {
     background-color: #07376b;
     color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
     padding: 16px;
-
-
+}
 
 .artigo-autor {
     font-weight: bold;
@@ -36,5 +36,4 @@ h2,
 p,
 button {
     margin-bottom: 12px;
-}
 }
