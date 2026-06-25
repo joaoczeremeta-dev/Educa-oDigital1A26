@@ -21,6 +21,11 @@ main {
     padding: 16px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 article {
     display: flex;
     flex-direction: column;
