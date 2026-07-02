@@ -49,3 +49,12 @@ p,
 button {
     margin-bottom: 12px;
 }
+.artigo-fonte a {
+    color: #07376b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.artigo-fonte a:hover {
+    text-decoration: underline;
+}
