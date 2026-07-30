@@ -119,3 +119,26 @@ button:hover {
 .tema-escuro article {
     background-color: #1f1f33;
 }
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+
+    font-size: 32px;
+    padding: 12px;
+
+    background-color: var(--cor-primaria);
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
